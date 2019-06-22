@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-export interface Props {
+interface ISearchBoxProps {
   searchChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const SearchBox = ({ searchChange }: Props) => {
+const SearchBox = ({ searchChange }: ISearchBoxProps) => {
   return (
     <div className='pa2'>
       <input
